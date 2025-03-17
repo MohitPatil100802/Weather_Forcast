@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #dccdc1;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: hsla(251, 76%, 10%, 0.963);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0e0d0df1;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.weather-info {
+    background: linear-gradient(135deg, #5b53da, #5de0e6);
+    color: #180404;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* ============================= */
+/*         RESPONSIVENESS         */
+/* ============================= */
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .weather-info {
+        padding: 15px;
+    }
+
+    .weather-info h3 {
+        font-size: 20px;
+    }
+}
+
+/* For Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .weather-info {
+        padding: 10px;
+    }
+
+    .weather-info h3 {
+        font-size: 18px;
+    }
+
+    .weather-info p {
+        font-size: 14px;
+    }
+}
